@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/full-calendar.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <ul>
+                                    <li><a class="nav-item nav-link" href="javascript:;">Agreements & Maps</a></li>
+                                    <li><a class="nav-item nav-link" href="javascript:;">Directories</a></li>
+                                    <li><a class="nav-item nav-link" href="javascript:;">Calendar</a></li>
+                                    <li><a class="nav-item nav-link" href="javascript:;">Resources</a></li>
+                                    <li><a class="nav-item nav-link" href="javascript:;">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-4 text-center text-lg-right welcome-info">
+                    <div class="user-name-info">
+                        <p>Welcome, <span class="user-name">John Doe</span></p>
+                    </div>
+                    <div class="header-notification">
+                        <ul>
+                            <li><a href="javascript:;" class="user-setting"></a></li>
+                            <li><a href="javascript:;" class="user-notification"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Calendar</li>
+                </ol>
+            </nav>
+            <div class="calendar-view-wrap">
+                <div id='calendar'></div>
+                <div class="event-detail">
+                    <div class="event-detail-list">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 text-md-left text-center">
+                                    <h5>Event Title</h5>
+                                    <p>descriptive text line</p>
+                                    <p class="event-detail-link"><a href="javascript:">www.website.com</a></p>
+                                </div>
+                                <div class="col-md-4 text-md-right text-center">
+                                    <a href="javascript:;" class="btn btn-blue-bg">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-detail-list">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 text-md-left text-center">
+                                    <h5>Event Title</h5>
+                                    <p>descriptive text line</p>
+                                    <p class="event-detail-link"><a href="javascript:">www.website.com</a></p>
+                                </div>
+                                <div class="col-md-4 text-md-right text-center">
+                                    <a href="javascript:;" class="btn btn-blue-bg">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-detail-list">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 text-md-left text-center">
+                                    <h5>Event Title</h5>
+                                    <p>descriptive text line</p>
+                                    <p class="event-detail-link"><a href="javascript:">www.website.com</a></p>
+                                </div>
+                                <div class="col-md-4 text-md-right text-center">
+                                    <a href="javascript:;" class="btn btn-blue-bg">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-detail-list">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 text-md-left text-center">
+                                    <h5>Event Title</h5>
+                                    <p>descriptive text line</p>
+                                    <p class="event-detail-link"><a href="javascript:">www.website.com</a></p>
+                                </div>
+                                <div class="col-md-4 text-md-right text-center">
+                                    <a href="javascript:;" class="btn btn-blue-bg">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left">
+                    <div class="copy-right-text">
+                        <p>© 2020</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <ul class="footer-list">
+                        <li><a href="javascript:;">Privacy Policy</a></li>
+                        <li><a href="javascript:;">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.js"></script>
+    <script type="text/javascript" src="js/custom-script.js"></script>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            initialDate: '2020-07-12',
+            headerToolbar: {
+                left: 'title',
+                center: '',
+                right: ''
+            },
+            height: 'auto',
+
+
+
+
+            events: [{
+                    title: 'My Event',
+                    start: '2020-07-01',
+                    popup: {
+                        title: 'Event Name',
+                        description: 'This is the description',
+                        date: '<label>Date</label>2020-07-01',
+                        time: '<label>Time</label>8:00-9:00 pm',
+                        website: '<label>Website</label>test.com'
+                    }
+                },
+                {
+                    title: 'My Event',
+                    start: '2020-07-15',
+                    popup: {
+                        title: 'Event Name',
+                        description: 'This is the description',
+                        date: '',
+                        time: '',
+                        website: ''
+                    }
+                },
+                {
+                    title: 'My Event',
+                    start: '2020-07-22',
+                    popup: {
+                        title: 'Event Name',
+                        description: 'This is the description',
+                        date: '',
+                        time: '',
+                        website: ''
+                    }
+                },
+                // more events here
+            ],
+            eventClick: function(info) {
+                var tis = info.el;
+                var popup = info.event.extendedProps.popup;
+                var tooltip = '<div class="tooltipevent" style="top:' + ($(tis).offset().top - 5) + 'px;left:' + ($(tis).offset().left + ($(tis).width()) / 2) + 'px"><div class="tooltip-close"></div><div><h4>' + popup.title + '</h4></div><div class="event-description"><p>' + popup.description + '</p></div><div class="event-more-info"><p>' + popup.date + '</p></div><div class="event-more-info"><p>' + popup.time + '</p></div><div class="event-more-info"><p>' + popup.website + '</p></div></div>';
+                var $tooltip = $(tooltip).appendTo('body');
+
+
+                $(tis).mouseover(function(e) {
+                    $(tis).css('z-index', 10000);
+                    $tooltip.fadeIn('500');
+                    $tooltip.fadeTo('10', 1.9);
+                
+                });
+                $('.tooltip-close').click(function() {
+            $(info.el).css('z-index', 8);
+            $('.tooltipevent').remove();
+        });
+            },
+            // eventMouseLeave: function(info) {
+            //     console.log('eventMouseLeave');
+            //     $(info.el).css('z-index', 8);
+            //     $('.tooltipevent').remove();
+            // }
+
+        });
+
+        calendar.render();
+
+    });
+    </script>
+</body>
+
+</html>

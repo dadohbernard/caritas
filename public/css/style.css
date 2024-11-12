@@ -1,0 +1,410 @@
+/* width and height of google map */
+#google_map {
+    width: 90%;
+    height: 500px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.student {
+    display: none;
+}
+.student.active {
+    display: block;
+}
+.patient {
+    display: none;
+}
+.patient.active {
+    display: block;
+}
+.other-support {
+    display: none;
+}
+.other-support.active {
+    display: block;
+}
+.custom-text-capitalize {
+    text-transform: uppercase;
+}
+/* amount */
+.parent {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    /* height: 100px;           You can adjust this height as needed */
+    /* background-color: #f0f0f0; Optional background for better visualization */
+}
+
+.blinking-circle {
+    width: 100px;              /* Adjust size */
+    height: 100px;             /* Adjust size */
+    background-color: green;
+    border-radius: 50%;
+    color: white;             /* For text color inside the circle */
+    display: flex;            /* Flexbox inside the circle to center text */
+    justify-content: center;  /* Center text horizontally */
+    align-items: center;      /* Center text vertically */
+    animation: blink 1s infinite;
+    font-size: 14px;          /* Adjust font size as needed */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+/* amont end here */
+/* Marker Edit form */
+.marker-edit label {
+    display: block;
+    margin-bottom: 5px;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important;
+    background-color: #0098bf !important;
+    border-color: #0098bf !important;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #0098bf !important;
+    background-color: #fff !important;
+    border: 1px solid #dee2e6 !important;
+}
+.btn-dark {
+    border: 1px solid #dc3545 !important;
+    color: #ffffffff !important;
+    background-color: #dc3545 !important;
+}
+.marker-edit label span {
+    width: 100px;
+    float: left;
+}
+/* audit standard style  */
+.audit_standard_card {
+    margin-top: 1em;
+    padding: 1em;
+    padding-bottom: 3em;
+}
+.marker-edit label input,
+.marker-edit label select {
+    height: 24px;
+}
+
+.marker-edit label textarea {
+    height: 60px;
+}
+
+.marker-edit label input,
+.marker-edit label select,
+.marker-edit label textarea {
+    width: 60%;
+    margin: 0px;
+    padding-left: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Marker Info Window */
+h1.marker-heading {
+    color: #585858;
+    margin: 0px;
+    padding: 0px;
+    font: 18px "Trebuchet MS", Arial;
+    border-bottom: 1px dotted #d8d8d8;
+}
+div.marker-info-win {
+    max-width: 300px;
+    margin-right: -20px;
+}
+div.marker-info-win p {
+    padding: 0px;
+    margin: 10px 0px 10px 0;
+}
+div.marker-inner-win {
+    padding: 5px;
+}
+button.save-marker,
+button.remove-marker {
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    color: #00f;
+    padding: 0px;
+    text-decoration: underline;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track { */
+/*background: #36b7ca; */
+/* } */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #676876;
+}
+
+/* Handle on hover */
+.file-upload {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #1fb264;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #15824b;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.file-upload-btn:hover {
+    background: #1aa059;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.file-upload-btn:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    margin-top: 20px;
+    border: 4px dashed #1fb264;
+    position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: #1fb264;
+    border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+.drag-text h3 {
+    width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #15824b;
+    padding: 60px 0;
+}
+
+.remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #0098bf;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.remove-image:hover {
+    background: #0098bf;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+
+.modal-right-bar {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-right-bar {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 20%;
+    height: 145%;
+    margin-right: 0;
+}
+
+/* The Close Button */
+.jcvalvesclose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 22px;
+    margin-top: -0.3em;
+    font-weight: bold;
+}
+
+.jcvalvesclose:hover,
+.jcvalvesclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-header-color:not(.card-outline) > .card-header {
+    background-color: #0098bf !important;
+    color: #fff;
+}
+.dataTables_wrapper table.dataTable thead th.sorting_asc:before {
+    content: "\f106";
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    font-size: 20px;
+    bottom: calc(50% - 10px);
+    right: 10px;
+}
+.dataTables_wrapper table.dataTable thead th.sorting_desc:after {
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    font-size: 20px;
+    bottom: calc(50% - 10px);
+    right: 10px;
+}
+.dataTables_wrapper table.dataTable thead th:before,
+.dataTables_wrapper table.dataTable thead th:after {
+    display: none;
+}
+#nav-bar .sidebar > ul li a i {
+    font-size: 22px;
+}
+#nav-bar.show .sidebar ul li:hover .nav_logo-name {
+    padding-left: 0px;
+}
+#nav-bar.show .sidebar > ul li a {
+    text-align: left;
+    transition: all 0.5s ease;
+}
+#nav-bar .sidebar > ul li,
+#nav-bar .sidebar > ul li:hover {
+    transition: all 0.5s ease;
+}
+.l-navbar,
+.l-navbar.show,
+.wrapper .content-wrapper {
+    transition: all 0.5s ease;
+}
+#nav-bar .sidebar ul li.hoverli .file_menu li a {
+    padding: 15px 6px 10px;
+    color: #5e5e5e;
+}
+#nav-bar .sidebar ul li.hoverli .file_menu li a {
+    font-weight: normal;
+}
+#nav-bar .sidebar > ul li a:hover,
+#nav-bar .sidebar ul li.hoverli .file_menu li a:hover,
+#nav-bar .sidebar > ul li a.active {
+    color: #0098bf;
+}
+#nav-bar .sidebar ul li.hoverli .file_menu li a {
+    transition: none;
+}
+form#add-mechanical table td input.add-color,
+form#edit-mechanical table td input.add-color {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 12px;
+}
+.wrapper .content-wrapper .card.content .container {
+    padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+    .body-pd:hover {
+        padding-left: calc(68px + 155px);
+        transition: all 0.5s ease;
+    }
+    #nav-bar:hover {
+        width: calc(68px + 155px);
+        transition: all 0.5s ease;
+    }
+    #nav-bar:hover .sidebar > ul li,
+    #nav-bar:hover .sidebar > ul li:hover {
+        width: auto;
+    }
+    #nav-bar:hover .sidebar > ul li .nav_logo-name {
+        visibility: visible;
+    }
+    #nav-bar:hover .sidebar ul li:hover .nav_logo-name {
+        padding-left: 0px;
+    }
+    #nav-bar:hover .sidebar ul li.hoverli ul.file_menu {
+        display: block !important;
+        position: absolute;
+        top: 0px;
+        left: 40px;
+        width: calc(100% - 40px);
+    }
+    #nav-bar .sidebar > ul li a {
+        padding-right: 0px;
+    }
+}
+@media screen and (min-width: 1301px) and (max-width: 1390px) {
+    .plant-card .btn-toolbar .btn-group a.btn {
+        font-size: 13px !important;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1300px) {
+    .plant-card .btn-toolbar .btn-group a.btn {
+        font-size: 12px !important;
+    }
+}
